@@ -14,7 +14,7 @@ import org.apache.flink.util.Collector;
  */
 public class SocketTextStreamWordCount {
 
-    public static void main( String[] args ) throws Exception {
+    public static void main(String[] args) throws Exception {
 
         //参数检查
         if (args.length != 2) {
