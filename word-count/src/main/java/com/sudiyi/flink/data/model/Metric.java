@@ -1,4 +1,4 @@
-package com.sudiyi.flink.model;
+package com.sudiyi.flink.data.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
