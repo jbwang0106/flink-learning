@@ -1,6 +1,9 @@
 package com.sudiyi.flink.data.source;
 
 import com.sudiyi.flink.data.model.Student;
+import org.apache.flink.configuration.Configuration;
+import org.apache.flink.streaming.api.functions.source.RichSourceFunction;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

@@ -29,7 +29,7 @@ public class WikipediaAnalysis {
                 .fold(new Tuple2<>("", 0L), new FoldFunction<WikipediaEditEvent, Tuple2<String, Long>>() {
                     private static final long serialVersionUID = -1021283448387478793L;
 
-                    @Override
+            @Override
             public Tuple2<String, Long> fold(Tuple2<String, Long> acc, WikipediaEditEvent event) {
                 acc.f0 = event.getUser();
                 acc.f1 += event.getByteDiff();
