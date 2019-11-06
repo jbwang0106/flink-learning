@@ -14,7 +14,7 @@ import org.apache.flink.util.Collector;
  */
 public class SocketTextStreamWordCount {
 
-    public static void main( String[] args ) throws Exception {
+    public static void main(String[] args) throws Exception {
 
         //参数检查
         if (args.length != 2) {
@@ -40,6 +40,8 @@ public class SocketTextStreamWordCount {
     }
 
     public static final class LineSplitter implements FlatMapFunction<String, Tuple2<String, Integer>> {
+
+        private static final long serialVersionUID = -6072731726655124312L;
 
         @Override
         public void flatMap(String s, Collector<Tuple2<String, Integer>> collector) {
